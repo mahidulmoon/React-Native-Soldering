@@ -28,7 +28,7 @@ function Details(){
 const styles = StyleSheet.create({
             
     detail_container:{
-      flex: 0.6,
+      flex: 0.4,
       backgroundColor: 'white'
     },
     item:{
