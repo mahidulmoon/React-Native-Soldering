@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
     data:{
       color: 'blue',
       fontSize: 25,
-      fontFamily: 'italic'
     }
   });
 
