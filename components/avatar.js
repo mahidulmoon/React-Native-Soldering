@@ -9,7 +9,7 @@ export default function Avatar() {
         <View style={styles.avatar_container}>
           <View style={{alignItems:'center',justifyContent:'center',color:'black',marginTop: 10}}>
             <Image style={{marginBottom:20}} source={require("../assets/batman.png")} />
-            <Text>Welcome to First Native App</Text>
+            {/* <Text>Welcome to First Native App</Text> */}
           </View>
         </View>
         

@@ -3,21 +3,25 @@ import { StyleSheet, Text, View,Image,SafeAreaView } from 'react-native';
 
 
 function Details(){
+  const objectData = {
+    name: "Md. Mahidul Islam",
+    age: 23,
+    designation: " Software Engg"
+  }
     
         return(
             <View style={styles.detail_container}>
                 <View style={styles.item}>
                     <Text style={styles.attribute}>Name:</Text>
-                    <Text style={styles.data}>Md. Mahidul Islam</Text>
+                    <Text style={styles.data}>{objectData.name}</Text>
                 </View>
                 <View style={styles.item}>
                     <Text style={styles.attribute}>Age:</Text>
-                    <Text style={styles.data}>23</Text>
+                    <Text style={styles.data}>{objectData.age}</Text>
                 </View>
                 <View style={styles.item}>
                     <Text style={styles.attribute}>Designation:</Text>
-                    <Text style={styles.data}>{`Software 
-                    Engineer`}</Text>
+                    <Text style={styles.data}>{objectData.designation}</Text>
                 </View>
             </View>
         )
