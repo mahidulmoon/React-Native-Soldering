@@ -2,8 +2,11 @@ import React from 'react'
 import { TouchableOpacity,Text,StyleSheet } from 'react-native'
 
 class ButtonClass extends React.Component{
+    state = {
+        response: "cholen dekhi"
+    }
     clickMe = (e) => {
-        console.log("cholen dekhi");
+        console.log(this.state.response);
     }
     render(){
         return(
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
         color: 'white',
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        marginBottom: 20
+        marginBottom: 15
 
     }
 })
