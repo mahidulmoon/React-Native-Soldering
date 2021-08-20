@@ -19,10 +19,10 @@ function Details(){
                     <Text style={styles.attribute}>Age:</Text>
                     <Text style={styles.data}>{objectData.age}</Text>
                 </View>
-                <View style={styles.item}>
+                {/* <View style={styles.item}>
                     <Text style={styles.attribute}>Designation:</Text>
                     <Text style={styles.data}>{objectData.designation}</Text>
-                </View>
+                </View> */}
             </View>
         )
         

@@ -8,14 +8,14 @@ export default class FormFile extends Component {
         return (
             <View style={styles.container}>
                 <TextInput style={styles.input} 
-                onChangeText={(test) => this.props.changeText(test)} />
+                onChangeText={(test) => this.props.changeText(test)} placeholder="Type here..." />
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: 'grey',
+        backgroundColor: 'yellow',
         flex: 0.1,
         justifyContent: 'center',
         alignItems: 'center'
