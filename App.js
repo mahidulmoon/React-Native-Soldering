@@ -1,17 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React,{ useState } from 'react';
 import { StyleSheet, Text, View,Image,SafeAreaView } from 'react-native';
 import Avatar from './components/avatar';
 import Details from './components/details';
 import ButtonClass from './components/button';
+import FormFile from './components/formFile';
 export default function App() {
+  const [text, setText] = useState('');
+  const valueChange = (value) => {
+    setText(value);
+  } 
   return (
     
       <SafeAreaView style={styles.container}>
         <Avatar />
         <Details />
+        <FormFile changeText={valueChange} />
         <ButtonClass title="Next" />
-        <ButtonClass title="Prev" />
+        <ButtonClass title={text} />
       </SafeAreaView>
     
   );
