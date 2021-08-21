@@ -1,12 +1,12 @@
 import React from 'react'
-import { TouchableOpacity,Text,StyleSheet } from 'react-native'
+import { TouchableOpacity,Text,StyleSheet,Alert } from 'react-native'
 
 class ButtonClass extends React.Component{
     state = {
         response: "cholen dekhi"
     }
     clickMe = (e) => {
-        console.log(this.state.response);
+        Alert.alert(this.state.response);
     }
     render(){
         return(
