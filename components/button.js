@@ -5,8 +5,20 @@ class ButtonClass extends React.Component{
     state = {
         response: "cholen dekhi"
     }
-    clickMe = (e) => {
-        Alert.alert(this.state.response);
+    clickMe = () => {
+        Alert.alert(this.state.response,
+            // [
+            //     {
+            //         text : "Cancel",
+            //         //onPress : () => console.log("cancel press"),
+            //         //style: 'cancel'
+            //     },
+            //     {
+            //         text : "ok",
+            //         //onPress : () => console.log("ok press"),
+            //     }
+            // ]
+        );
     }
     render(){
         return(
